@@ -1,0 +1,5 @@
+The Quicksort algorithm is based on the divide-and-conquer approach. Overall, the quicksort algorithm follows three main steps:
+
+Pick an element from the array as a pivot
+Partition the problem set by moving smaller elements to the left of the pivot and larger elements to its right
+Repeat the above steps on each partition
