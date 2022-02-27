@@ -7,8 +7,6 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		fibonacciLoop(9);
-		System.out.println(fibonacciRecursion(9));
-		throw new NPE("My NPE");
 	}
 
 	static void fibonacciLoop(int n) {
