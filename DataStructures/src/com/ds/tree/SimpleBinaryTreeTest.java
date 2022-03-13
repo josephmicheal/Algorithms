@@ -1,4 +1,4 @@
-package com.binary.tree;
+package com.ds.tree;
 
 public class SimpleBinaryTreeTest {
 
@@ -16,7 +16,7 @@ public class SimpleBinaryTreeTest {
 	
 	public static void add(Node root,int value) {
 		while(root != null) {
-			if(root.value < value) {
+			if(root.data < value) {
 				if(root.right != null) {
 					root = root.right;
 				}else {
@@ -38,7 +38,7 @@ public class SimpleBinaryTreeTest {
 	public static void print(Node root) {
 		
 		while(root != null) {
-			System.out.println(root.value);
+			System.out.println(root.data);
 			if(root.left != null) {
 				print(root.left);
 			}
