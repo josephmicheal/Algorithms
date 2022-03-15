@@ -5,21 +5,22 @@ public class StringPermutation {
 	public static void main(String[] args) {
 
 		
+		permutate("abc","");
 
 	}
 	
-	public static void swap(String s,int i, int j) {
-		String tmp = s.charAt(i)+"";
-		//s.re
+
+	public static void permutate(String s, String answer) {
+
+		if(s.length()==0) { System.out.print(answer +" "); return;}
 		
-	}
-	
-	public void permutate(String s, int l, int r) {
-		if(l == r) System.out.println(s);
-		
-		for(int i=l;i < r;i++) {
-			
+		for(int i=0;i<s.length();i++) {
+			String charAt = s.charAt(i)+"";
+			String leftStr = s.substring(0,i);
+			String rightStr = s.substring(i+1);
+			permutate(leftStr+rightStr,answer+charAt);
 		}
+		
 	}
 
 }

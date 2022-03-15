@@ -1,5 +1,4 @@
 package com.string;
-import java.util.*;
 
 class GFG{
 
